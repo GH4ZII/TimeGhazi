@@ -1,0 +1,25 @@
+﻿@model TimeGhazi.Models.Shift
+
+@{
+    ViewData["Title"] = "Legg til nytt skift";
+}
+
+<h2>Legg til nytt skift</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label>Ansatt ID</label>
+        <input type="number" asp-for="EmployeeId" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label>Starttid</label>
+        <input type="datetime-local" asp-for="StartTime" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label>Sluttid</label>
+        <input type="datetime-local" asp-for="EndTime" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-success">Lagre</button>
+</form>
+
+<a href="@Url.Action("Index")" class="btn btn-secondary">Tilbake</a>

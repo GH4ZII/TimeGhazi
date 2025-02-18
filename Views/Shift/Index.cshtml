@@ -1,0 +1,31 @@
+﻿@model IEnumerable<TimeGhazi.Models.Shift>
+
+@{
+    ViewData["Title"] = "Admin Panel - Skiftoversikt";
+}
+
+<h2>Skiftoversikt</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Ansatt ID</th>
+        <th>Starttid</th>
+        <th>Sluttid</th>
+        <th>Godkjent</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var shift in Model)
+    {
+        <tr>
+            <td>@shift.EmployeeId</td>
+            <td>@shift.StartTime</td>
+            <td>@shift.EndTime</td>
+            <td>@(shift.IsApproved ? "Ja" : "Nei")</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Create")" class="btn btn-primary">Legg til nytt skift</a>
