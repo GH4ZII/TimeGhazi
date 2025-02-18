@@ -2,6 +2,7 @@ using TimeGhazi.Models;
 using TimeGhazi.Hubs;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,8 +28,21 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// **Fiks: Registrer både IdentityUser og IdentityRole**
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+    {
+        options.SignIn.RequireConfirmedAccount = false;
+    })
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders()
+    .AddDefaultUI();
+
+// **Fiks: Registrer RoleManager**
+builder.Services.AddScoped<RoleManager<IdentityRole>>();
+
 // Add MVC views
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
@@ -52,13 +66,31 @@ else
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+app.MapRazorPages();
 app.MapHub<ShiftHub>("/shiftHub");
 
 // Configure routing
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Shift}/{action=Index}/{id?}");
+
+// **Fiks: Kjør DataSeeder riktig etter at appen er satt opp**
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var logger = services.GetRequiredService<ILogger<Program>>();
+    try
+    {
+        await DataSeeder.SeedAdminUser(services);
+        logger.LogInformation("Admin user seeding completed successfully.");
+    }
+    catch (Exception ex)
+    {
+        logger.LogError(ex, "An error occurred while seeding the admin user.");
+    }
+}
 
 app.Run();

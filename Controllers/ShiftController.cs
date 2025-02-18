@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using TimeGhazi.Models;
@@ -6,6 +7,7 @@ using TimeGhazi.Hubs;
 
 namespace TimeGhazi.Controllers
 {
+    [Authorize]
     public class ShiftController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -25,6 +27,7 @@ namespace TimeGhazi.Controllers
         }
 
         // GET: Vise skjema for å legge til nytt skift
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -32,6 +35,7 @@ namespace TimeGhazi.Controllers
 
         // POST: Legge til nytt skift
         [HttpPost]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("EmployeeId,StartTime,EndTime")] Shift shift)
         {

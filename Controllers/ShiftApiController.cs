@@ -32,6 +32,7 @@ namespace TimeGhazi.Controllers
         {
             return await _context.Shifts.ToListAsync();
         }
+        
 
         // POST: api/shifts
         [HttpPost]
@@ -49,5 +50,5 @@ namespace TimeGhazi.Controllers
 
             return CreatedAtAction(nameof(GetShifts), new { id = shift.Id }, shift);
         }
-    }
+    } 
 }
