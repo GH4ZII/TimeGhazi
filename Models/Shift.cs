@@ -1,22 +1,23 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System; // Gir tilgang til grunnleggende datatyper som DateTime
+using System.ComponentModel.DataAnnotations; // Brukes for validering av data
 
 namespace TimeGhazi.Models
 {
+    // **Definerer en Shift-modell som representerer et arbeidsskift**
     public class Shift
     {
-        [Key]
+        [Key] // **Markerer dette feltet som primærnøkkelen**
         public int Id { get; set; }
 
-        [Required]
-        public int EmployeeId { get; set; }
+        [Required] // **Feltet er obligatorisk**
+        public int EmployeeId { get; set; } // **Knytter skiftet til en ansatt**
 
-        [Required]
-        public DateTime StartTime { get; set; }
+        [Required] // **Feltet er obligatorisk**
+        public DateTime StartTime { get; set; } // **Starttidspunkt for skiftet**
 
-        [Required]
-        public DateTime EndTime { get; set; }
+        [Required] // **Feltet er obligatorisk**
+        public DateTime EndTime { get; set; } // **Sluttidspunkt for skiftet**
 
-        public bool IsApproved { get; set; } = false;
+        public bool IsApproved { get; set; } = false; // **Angir om skiftet er godkjent (standard: false)**
     }
 }

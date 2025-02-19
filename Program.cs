@@ -1,56 +1,63 @@
-using TimeGhazi.Models;
-using TimeGhazi.Hubs;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
-using Microsoft.AspNetCore.Identity;
+using TimeGhazi.Models; // Importerer prosjektets modeller
+using TimeGhazi.Hubs; // Importerer SignalR-hub for sanntidsoppdateringer
+using Microsoft.EntityFrameworkCore; // Gir tilgang til Entity Framework Core for databasehåndtering
+using Microsoft.OpenApi.Models; // Brukes for å generere Swagger-dokumentasjon
+using Microsoft.AspNetCore.Identity; // Gir tilgang til brukerhåndtering via Identity
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add controllers and Swagger
+// **Konfigurer CORS (Cross-Origin Resource Sharing)**
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",
         policy => policy
-            .AllowAnyOrigin()
-            .AllowAnyMethod()
-            .AllowAnyHeader());
+            .AllowAnyOrigin()  // Tillater forespørsler fra alle domener
+            .AllowAnyMethod()  // Tillater alle HTTP-metoder (GET, POST, PUT, DELETE, etc.)
+            .AllowAnyHeader()); // Tillater alle HTTP-headere
 });
 
+// **Legger til SignalR for sanntidskommunikasjon**
 builder.Services.AddSignalR();
+
+// **Legger til kontrollerstøtte (API-kontrollere)**
 builder.Services.AddControllers();
+
+// **Konfigurer Swagger for API-dokumentasjon**
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "TimeGhazi", Version = "v1" });
 });
 
-// Add SQLite database
+// **Konfigurer SQLite database**
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// **Fiks: Registrer både IdentityUser og IdentityRole**
+// **Konfigurer ASP.NET Identity for autentisering og brukerhåndtering**
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
     {
-        options.SignIn.RequireConfirmedAccount = false;
+        options.SignIn.RequireConfirmedAccount = false; // Krever ikke e-postbekreftelse ved registrering
     })
-    .AddEntityFrameworkStores<ApplicationDbContext>()
-    .AddDefaultTokenProviders()
-    .AddDefaultUI();
+    .AddEntityFrameworkStores<ApplicationDbContext>() // Bruker Entity Framework for Identity-lagring
+    .AddDefaultTokenProviders() // Legger til støtte for passordtilbakestilling, e-postbekreftelse, etc.
+    .AddDefaultUI(); // Inkluderer standard UI for Identity (f.eks. login, register)
 
-// **Fiks: Registrer RoleManager**
+// **Registrer RoleManager slik at roller kan administreres**
 builder.Services.AddScoped<RoleManager<IdentityRole>>();
 
-// Add MVC views
+// **Legger til støtte for MVC-visninger og Razor Pages**
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
+// **Aktiver CORS-policyen**
 app.UseCors("AllowAll");
 
-// Configure the HTTP request pipeline
+// **Konfigurer midlertidig rørledning avhengig av miljø**
 if (app.Environment.IsDevelopment())
 {
+    // **Bruk Swagger i utviklingsmiljø**
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
@@ -59,38 +66,43 @@ if (app.Environment.IsDevelopment())
 }
 else
 {
+    // **Bruk feilbehandling og HSTS (HTTP Strict Transport Security) i produksjon**
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-app.UseRouting();
-app.UseAuthentication();
-app.UseAuthorization();
+// **Konfigurer HTTP-håndtering**
+app.UseHttpsRedirection(); // **Tvinger HTTPS**
+app.UseStaticFiles(); // **Gjør det mulig å servere statiske filer (CSS, JS, bilder, etc.)**
+app.UseRouting(); // **Aktiverer ruting**
+app.UseAuthentication(); // **Aktiverer autentisering (brukerhåndtering)**
+app.UseAuthorization(); // **Aktiverer autorisasjon (tilgangskontroll basert på roller)**
+
+// **Kartlegger API-kontrollere og Razor Pages**
 app.MapControllers();
 app.MapRazorPages();
-app.MapHub<ShiftHub>("/shiftHub");
+app.MapHub<ShiftHub>("/shiftHub"); // **Definerer SignalR-endepunkt for skiftoppdateringer**
 
-// Configure routing
+// **Konfigurer standardruting for web-applikasjonen**
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Shift}/{action=Index}/{id?}");
 
-// **Fiks: Kjør DataSeeder riktig etter at appen er satt opp**
+// **Kjør DataSeeder for å opprette standard admin-bruker og roller**
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     var logger = services.GetRequiredService<ILogger<Program>>();
     try
     {
-        await DataSeeder.SeedAdminUser(services);
+        await DataSeeder.SeedAdminUser(services); // **Oppretter admin-bruker og roller hvis de ikke finnes**
         logger.LogInformation("Admin user seeding completed successfully.");
     }
     catch (Exception ex)
     {
-        logger.LogError(ex, "An error occurred while seeding the admin user.");
+        logger.LogError(ex, "An error occurred while seeding the admin user."); // **Logger eventuelle feil**
     }
 }
 
+// **Starter applikasjonen**
 app.Run();
