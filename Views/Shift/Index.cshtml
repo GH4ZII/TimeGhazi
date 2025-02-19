@@ -6,26 +6,55 @@
 
 <h2>Skiftoversikt</h2>
 
-<table class="table">
-    <thead>
+<table class="table table-striped">
+    <thead class="thead-dark">
     <tr>
-        <th>Ansatt ID</th>
+        <th>Ansatt</th>
         <th>Starttid</th>
         <th>Sluttid</th>
         <th>Godkjent</th>
+        <th>Handling</th>
     </tr>
     </thead>
     <tbody>
     @foreach (var shift in Model)
     {
         <tr>
-            <td>@shift.EmployeeId</td>
-            <td>@shift.StartTime</td>
-            <td>@shift.EndTime</td>
-            <td>@(shift.IsApproved ? "Ja" : "Nei")</td>
+            <td>
+                @if (shift.Employee != null)
+                {
+                    <strong>@shift.Employee.Name</strong> <br />
+                    <small>@shift.Employee.Email</small>
+                }
+                else
+                {
+                    <span class="text-danger">Ingen ansatt</span>
+                }
+            </td>
+            <td>@shift.StartTime.ToString("dd.MM.yyyy HH:mm")</td>
+            <td>@shift.EndTime.ToString("dd.MM.yyyy HH:mm")</td>
+            <td>
+                @if (shift.IsApproved)
+                {
+                    <span class="badge bg-success">Ja</span>
+                }
+                else
+                {
+                    <span class="badge bg-warning text-dark">Nei</span>
+                }
+            </td>
+            <td>
+                @if (!shift.IsApproved)
+                {
+                    <form method="post" action="@Url.Action("Approve", "Shift")">
+                        <input type="hidden" name="shiftId" value="@shift.Id" />
+                        <button type="submit" class="btn btn-success btn-sm">Godkjenn</button>
+                    </form>
+                }
+            </td>
         </tr>
     }
     </tbody>
 </table>
 
-<a href="@Url.Action("Create")" class="btn btn-primary">Legg til nytt skift</a>
+<a href="@Url.Action("Create")" class="btn btn-primary mt-3">Legg til nytt skift</a>

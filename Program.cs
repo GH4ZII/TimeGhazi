@@ -3,17 +3,40 @@ using TimeGhazi.Hubs; // Importerer SignalR-hub for sanntidsoppdateringer
 using Microsoft.EntityFrameworkCore; // Gir tilgang til Entity Framework Core for databasehåndtering
 using Microsoft.OpenApi.Models; // Brukes for å generere Swagger-dokumentasjon
 using Microsoft.AspNetCore.Identity; // Gir tilgang til brukerhåndtering via Identity
+using Microsoft.AspNetCore.Authentication.JwtBearer; // Brukes til å autentisere brukere med JWT
+using Microsoft.IdentityModel.Tokens; // Brukes til å generere og validere JWT-tokens
+using System.Text; // Gir tilgang til tekstbehandling
 
 var builder = WebApplication.CreateBuilder(args);
+
+// **Konfigurer JWT-autentisering**
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Issuer"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+        };
+    });
+
+builder.Services.AddAuthorization();
 
 // **Konfigurer CORS (Cross-Origin Resource Sharing)**
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",
         policy => policy
-            .AllowAnyOrigin()  // Tillater forespørsler fra alle domener
+            .WithOrigins("http://10.0.2.2:5026", "http://localhost:5026") // Tillater kun disse
             .AllowAnyMethod()  // Tillater alle HTTP-metoder (GET, POST, PUT, DELETE, etc.)
-            .AllowAnyHeader()); // Tillater alle HTTP-headere
+            .AllowAnyHeader() // Tillater alle HTTP-headere
+            .AllowCredentials()); // Viktig for JWT
+
 });
 
 // **Legger til SignalR for sanntidskommunikasjon**
@@ -75,6 +98,7 @@ else
 app.UseHttpsRedirection(); // **Tvinger HTTPS**
 app.UseStaticFiles(); // **Gjør det mulig å servere statiske filer (CSS, JS, bilder, etc.)**
 app.UseRouting(); // **Aktiverer ruting**
+app.UseWebSockets();
 app.UseAuthentication(); // **Aktiverer autentisering (brukerhåndtering)**
 app.UseAuthorization(); // **Aktiverer autorisasjon (tilgangskontroll basert på roller)**
 
