@@ -13,45 +13,65 @@ namespace TimeGhazi.Controllers
     [ApiController]
     public class ShiftApiController : ControllerBase
     {
-        // Gir oss tilgang til databasen
         private readonly ApplicationDbContext _context;
-        
-        // Gir oss tilgang til SignalR-hubben for sanntidskommunikasjon
         private readonly IHubContext<ShiftHub> _hubContext;
 
-        // Konstruktør som setter opp avhengigheter (database og SignalR)
         public ShiftApiController(ApplicationDbContext context, IHubContext<ShiftHub> hubContext)
         {
             _context = context;
             _hubContext = hubContext;
         }
 
-        // GET: api/shifts
-        [HttpGet] 
-        // Henter og returnerer alle skift fra databasen
-        public async Task<ActionResult<IEnumerable<Shift>>> GetShifts()
+        // 📌 GET: api/shifts/{employeeId}
+        // 🔹 Henter skift KUN for en spesifikk ansatt
+        [HttpGet("{employeeId}")]
+        public async Task<ActionResult<IEnumerable<Shift>>> GetShiftsForEmployee(int employeeId)
         {
-            return await _context.Shifts.ToListAsync(); // Henter alle skift i en liste
+            Console.WriteLine($"📡 Henter skift for ansatt {employeeId}");
+
+            var shifts = await _context.Shifts
+                .Where(s => s.EmployeeId == employeeId)
+                .ToListAsync();
+
+            if (shifts == null || shifts.Count == 0)
+            {
+                Console.WriteLine($"❌ Ingen skift funnet for ansatt {employeeId}");
+                return NotFound(new { message = "Ingen skift funnet." });
+            }
+
+            return Ok(shifts);
         }
-        
-        // POST: api/shifts
+
+        // 📌 POST: api/shifts
+        // 🔹 Oppretter et nytt skift
         [HttpPost]
-        // Oppretter et nytt skift i databasen
         public async Task<ActionResult<Shift>> CreateShift([FromBody] Shift shift)
         {
-            // Sjekker om det er sendt inn gyldig skiftdata
             if (shift == null)
+            {
+                Console.WriteLine("❌ Ugyldig skiftdata mottatt!");
                 return BadRequest("Ugyldig skiftdata");
+            }
 
-            // Legger til skiftet i databasen
+            // Sjekker om den ansatte finnes i databasen
+            var employeeExists = await _context.Employees.AnyAsync(e => e.Id == shift.EmployeeId);
+            if (!employeeExists)
+            {
+                Console.WriteLine($"❌ Ansatt med ID {shift.EmployeeId} ikke funnet!");
+                return BadRequest("Ansatt ikke funnet");
+            }
+
+            Console.WriteLine($"✅ Oppretter nytt skift for ansatt {shift.EmployeeId}");
+            shift.IsApproved = true; // Skiftet blir automatisk godkjent
+
             _context.Shifts.Add(shift);
             await _context.SaveChangesAsync();
 
-            // Sender sanntidsoppdatering til alle tilkoblede klienter via SignalR
-            await _hubContext.Clients.All.SendAsync("ReceiveShiftUpdate", "Et nytt skift har blitt lagt til!");
+            // 📡 Send sanntidsoppdatering KUN til riktig ansatt via SignalR
+            await _hubContext.Clients.Group(shift.EmployeeId.ToString())
+                .SendAsync("ReceiveShiftUpdate", $"Et nytt skift er lagt til for deg!");
 
-            // Returnerer en bekreftelse på at skiftet ble opprettet
-            return CreatedAtAction(nameof(GetShifts), new { id = shift.Id }, shift);
+            return CreatedAtAction(nameof(GetShiftsForEmployee), new { employeeId = shift.EmployeeId }, shift);
         }
     } 
 }

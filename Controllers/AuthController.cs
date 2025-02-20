@@ -55,7 +55,7 @@ namespace TimeGhazi.Controllers
 
             // **Genererer en token (nøkkel) som brukes for sikkerhet**
             var token = GenerateJwtToken(user);
-            return Ok(new { token }); // Returnerer tokenet til brukeren
+            return Ok(new { token, employeeId = employee.Id}); // Returnerer tokenet til brukeren
         }
 
         // **Denne funksjonen lager en sikker token (nøkkel)**

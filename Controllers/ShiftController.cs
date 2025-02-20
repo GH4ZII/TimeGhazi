@@ -96,8 +96,8 @@ public async Task<IActionResult> Create([Bind("EmployeeId,StartTime,EndTime")] S
         Console.WriteLine("✅ Skift lagret i databasen!");
 
         // **Sender sanntidsoppdatering til alle tilkoblede klienter via SignalR**
-        await _hubContext.Clients.All.SendAsync("ReceiveShiftUpdate", "Et nytt skift har blitt lagt til!");
-        Console.WriteLine("📡 SignalR-melding sendt: Et nytt skift har blitt lagt til!");
+        await _hubContext.Clients.Group(shift.EmployeeId.ToString())
+            .SendAsync("ReceiveShiftUpdate", "Du har fått et nytt skift!");
 
         return RedirectToAction(nameof(Index)); // Går tilbake til listen over skift
     }
