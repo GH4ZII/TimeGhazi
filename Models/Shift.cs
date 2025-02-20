@@ -12,8 +12,8 @@ namespace TimeGhazi.Models
         [Required]
         public int EmployeeId { get; set; } // 🔹 ID-en til den ansatte
 
-        [ForeignKey("EmployeeId")]
-        public Employee Employee { get; set; } // 🔹 Knytter skiftet til en ansatt
+        [ForeignKey("EmployeeId")] // ✅ Knytter Shift til Employee-tabellen
+        public Employee? Employee { get; set; } // 🔹 Navigasjonsfelt til Employee
 
         [Required]
         public DateTime StartTime { get; set; }

@@ -11,8 +11,8 @@ using TimeGhazi.Models;
 namespace TimeGhazi.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250218214933_FixUserIdInEmployees")]
-    partial class FixUserIdInEmployees
+    [Migration("20250220175853_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -263,6 +263,9 @@ namespace TimeGhazi.Migrations
                     b.Property<int>("EmployeeId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<int?>("EmployeeId1")
+                        .HasColumnType("INTEGER");
+
                     b.Property<DateTime>("EndTime")
                         .HasColumnType("TEXT");
 
@@ -273,6 +276,10 @@ namespace TimeGhazi.Migrations
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("EmployeeId");
+
+                    b.HasIndex("EmployeeId1");
 
                     b.ToTable("Shifts");
                 });
@@ -337,6 +344,26 @@ namespace TimeGhazi.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("TimeGhazi.Models.Shift", b =>
+                {
+                    b.HasOne("TimeGhazi.Models.Employee", "Employee")
+                        .WithMany()
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TimeGhazi.Models.Employee", null)
+                        .WithMany("Shifts")
+                        .HasForeignKey("EmployeeId1");
+
+                    b.Navigation("Employee");
+                });
+
+            modelBuilder.Entity("TimeGhazi.Models.Employee", b =>
+                {
+                    b.Navigation("Shifts");
                 });
 #pragma warning restore 612, 618
         }

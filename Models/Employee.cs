@@ -1,43 +1,45 @@
-﻿using System.ComponentModel.DataAnnotations; // Gir tilgang til valideringsegenskaper
-using System.ComponentModel.DataAnnotations.Schema; // Brukes for databasekonfigurasjon
-using Microsoft.AspNetCore.Identity; // Gir tilgang til ASP.NET Identity
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Identity;
+using System.Collections.Generic; // For List<Shift>
 
 namespace TimeGhazi.Models
 {
-    // **Definerer Employee-tabellen som lagrer ansatte i databasen**
     public class Employee
     {
-        [Key] // **Angir at dette er primærnøkkelen**
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // **Auto-increment ID**
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [Required] // **Feltet er obligatorisk**
-        [StringLength(100)] // **Begrenser lengden på navnet til 100 tegn**
+        [Required]
+        [StringLength(100)]
         public string Name { get; set; }
 
-        [Required, EmailAddress] // **Påkrevd og må være en gyldig e-post**
+        [Required, EmailAddress]
         public string Email { get; set; }
         
-        [Required] // **Påkrevd felt**
-        [Phone] // **Må være et gyldig telefonnummer**
+        [Required]
+        [Phone]
         public string PhoneNumber { get; set; }
 
-        [Required] // **Påkrevd felt**
-        [StringLength(50)] // **Maks 50 tegn for rollen**
-        public string Role { get; set; } // **F.eks. "Admin" eller "Employee"**
-        
-        [Required] // **Påkrevd felt**
-        public int Age { get; set; } // **Alder på den ansatte**
-        
-        [Required] // **Påkrevd felt**
-        public string Address { get; set; } // **Adresse til den ansatte**
+        [Required]
+        [StringLength(50)]
+        public string Role { get; set; }
 
-        // **Kobler Employee til IdentityUser (brukeren i ASP.NET Identity)**
-        [Required] // **Påkrevd for å koble ansatt til en IdentityUser**
-        [Column(TypeName = "TEXT")] // **Lagrer UserId som en tekststreng i databasen**
+        [Required]
+        public int Age { get; set; }
+
+        [Required]
+        public string Address { get; set; }
+
+        // 🔹 Kobling til IdentityUser
+        [Required]
         public string UserId { get; set; }
 
-        [ForeignKey("UserId")] // **Definerer fremmednøkkel-relasjon til IdentityUser**
-        public IdentityUser? User { get; set; } // **Navigasjonsfelt for å hente tilknyttet bruker**
+        [ForeignKey("UserId")]
+        public IdentityUser? User { get; set; } 
+
+        // 🔹 Knytter Employee til Shift-tabellen (1 Employee har mange Shift)
+        public List<Shift> Shifts { get; set; } = new List<Shift>(); // 🔥 Nytt
     }
 }

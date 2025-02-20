@@ -25,7 +25,10 @@ namespace TimeGhazi.Controllers
         // **Viser admin-panelet med alle skift**
         public async Task<IActionResult> Index()
         {
-            var shifts = await _context.Shifts.ToListAsync(); // Henter alle skift fra databasen
+            var shifts = await _context.Shifts
+                .Include(s => s.Employee) // 🔥 Henter ansatt-informasjonen
+                .ToListAsync();
+
             return View(shifts); // Sender skift-listen til visningen
         }
 
@@ -33,6 +36,17 @@ namespace TimeGhazi.Controllers
         [Authorize(Roles = "Admin")] // Kun admin kan se skjemaet
         public IActionResult Create()
         {
+            
+            var employees = _context.Employees.ToList();
+
+            if (employees == null || !employees.Any())
+            {
+                ViewBag.Employees = new List<Employee>();
+            }
+            else
+            {
+                ViewBag.Employees = employees;
+            }
             return View(); // Viser skjema for å opprette skift
         }
 
@@ -40,22 +54,59 @@ namespace TimeGhazi.Controllers
         [HttpPost]
         [Authorize(Roles = "Admin")] // Kun admin kan legge til skift
         [ValidateAntiForgeryToken] // Beskytter mot CSRF-angrep
-        public async Task<IActionResult> Create([Bind("EmployeeId,StartTime,EndTime")] Shift shift)
+public async Task<IActionResult> Create([Bind("EmployeeId,StartTime,EndTime")] Shift shift)
+{
+    var employees = _context.Employees.ToList();
+    ViewBag.Employees = employees; // Sikrer at dropdown for ansatte fungerer
+
+    Console.WriteLine("🟢 Mottatt forespørsel til Create-metoden.");
+    Console.WriteLine($"🔹 EmployeeId: {shift.EmployeeId}");
+    Console.WriteLine($"🔹 StartTime: {shift.StartTime}");
+    Console.WriteLine($"🔹 EndTime: {shift.EndTime}");
+
+    if (!ModelState.IsValid)
+    {
+        Console.WriteLine("❌ ModelState er ikke valid! Feilmeldinger:");
+        foreach (var error in ModelState)
         {
-            // **Sjekker om skjemaet er fylt ut riktig**
-            if (ModelState.IsValid)
+            foreach (var err in error.Value.Errors)
             {
-                shift.IsApproved = false; // **Nytt skift starter som ikke godkjent**
-                _context.Add(shift); // Legger skiftet i databasen
-                await _context.SaveChangesAsync(); // Lagrer endringer i databasen
-
-                // **Sender sanntidsoppdatering til alle tilkoblede klienter via SignalR**
-                await _hubContext.Clients.All.SendAsync("ReceiveShiftUpdate", "Et nytt skift har blitt lagt til!");
-
-                return RedirectToAction(nameof(Index)); // Går tilbake til listen over skift
+                Console.WriteLine($"  - {error.Key}: {err.ErrorMessage}");
             }
+        }
+        return View(shift);
+    }
 
-            return View(shift); // Hvis feil, returnerer skjemaet med feilmeldinger
+    try
+    {
+        // 🔥 Hent Employee fra databasen basert på EmployeeId
+        var employee = await _context.Employees.FindAsync(shift.EmployeeId);
+        if (employee == null)
+        {
+            Console.WriteLine("❌ Feil: Fant ikke en ansatt med ID " + shift.EmployeeId);
+            ModelState.AddModelError("EmployeeId", "Den valgte ansatte finnes ikke.");
+            return View(shift);
+        }
+
+        shift.Employee = employee; // 🔥 Viktig! Setter Employee-objektet
+
+        shift.IsApproved = true; // **Nytt skift starter som ikke godkjent**
+        _context.Add(shift);
+        await _context.SaveChangesAsync();
+        Console.WriteLine("✅ Skift lagret i databasen!");
+
+        // **Sender sanntidsoppdatering til alle tilkoblede klienter via SignalR**
+        await _hubContext.Clients.All.SendAsync("ReceiveShiftUpdate", "Et nytt skift har blitt lagt til!");
+        Console.WriteLine("📡 SignalR-melding sendt: Et nytt skift har blitt lagt til!");
+
+        return RedirectToAction(nameof(Index)); // Går tilbake til listen over skift
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"❌ Feil ved lagring i databasen: {ex.Message}");
+        return View(shift);
+            }
         }
     }
 }
+
