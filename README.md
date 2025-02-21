@@ -36,7 +36,7 @@ TimeGhazi is a shift management system designed for businesses to manage employe
 ### 🚀 Backend (Admin Panel)
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/timeghazi.git
+   git clone https://github.com/your-repo/timeGhazi.git
    cd timeghazi/TimeGhazi
    ```
 2. Install dependencies:
