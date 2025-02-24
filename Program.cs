@@ -78,13 +78,14 @@ var app = builder.Build();
 app.UseCors("AllowAll");
 
 // **Konfigurer midlertidig rørledning avhengig av miljø**
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 {
     // **Bruk Swagger i utviklingsmiljø**
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "TimeGhazi API v1");
+        c.RoutePrefix = string.Empty;
     });
 }
 else
