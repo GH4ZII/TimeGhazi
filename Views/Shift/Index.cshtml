@@ -1,5 +1,9 @@
 ﻿@model IEnumerable<TimeGhazi.Models.Shift>
 
+@section Styles {
+    <link rel="stylesheet" href="~/css/CreateShift.css" asp-append-version="true" />
+}
+
 @{
     ViewData["Title"] = "Admin Panel - Skiftoversikt";
 }
@@ -36,3 +40,9 @@
 </table>
 
 <a href="@Url.Action("Create")" class="btn btn-primary mt-3">Legg til nytt skift</a>
+
+<!-- Ringene bak skjemaet -->
+<div class="circle-container">
+    <div class="circle blue"></div>
+    <div class="circle gray"></div>
+</div>

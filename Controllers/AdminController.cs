@@ -107,7 +107,7 @@ namespace TimeGhazi.Controllers
                 Console.WriteLine($"✅ Ansatt {newEmployee.Name} lagret i databasen med ID: {newEmployee.Id}");
 
                 // Viser en bekreftelse til admin
-                ViewBag.Message = "Brukeren er opprettet og lagt til i Employees-tabellen. Gi dem dette passordet: " + tempPassword;
+                ViewBag.Message = "Brukeren er opprettet. Gi dem dette passordet: " + tempPassword;
                 return View();
             }
 

@@ -8,7 +8,7 @@
         <select asp-for="EmployeeId" class="form-control" required>
             @foreach (var employee in ViewBag.Employees)
             {
-                <option value="@employee.Id">@employee.Name - @employee.Email</option> <!-- 🔥 Endret til Id -->
+                <option value="@employee.Id">@employee.Name - @employee.Email</option>
             }
         </select>
     </div>

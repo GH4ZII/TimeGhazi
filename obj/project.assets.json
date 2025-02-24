@@ -6799,11 +6799,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ghaaz\\OneDrive\\Documents\\Timegrip.NET\\TimeGhazi\\TimeGhazi\\TimeGhazi.csproj",
+      "projectUniqueName": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGripProject\\TimeGrip.Net\\TimeGhazi.csproj",
       "projectName": "TimeGhazi",
-      "projectPath": "C:\\Users\\ghaaz\\OneDrive\\Documents\\Timegrip.NET\\TimeGhazi\\TimeGhazi\\TimeGhazi.csproj",
+      "projectPath": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGripProject\\TimeGrip.Net\\TimeGhazi.csproj",
       "packagesPath": "C:\\Users\\ghaaz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ghaaz\\OneDrive\\Documents\\Timegrip.NET\\TimeGhazi\\TimeGhazi\\obj\\",
+      "outputPath": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGripProject\\TimeGrip.Net\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ghaaz\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -32,11 +32,9 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",
         policy => policy
-            .WithOrigins("http://10.0.2.2:5026", "http://localhost:5026") // Tillater kun disse
-            .AllowAnyMethod()  // Tillater alle HTTP-metoder (GET, POST, PUT, DELETE, etc.)
-            .AllowAnyHeader() // Tillater alle HTTP-headere
-            .AllowCredentials()); // Viktig for JWT
-
+            .AllowAnyOrigin()
+            .AllowAnyMethod() // Tillater alle HTTP-metoder (GET, POST, PUT, DELETE, etc.)
+            .AllowAnyHeader()); // Tillater alle HTTP-headere
 });
 
 // **Legger til SignalR for sanntidskommunikasjon**
