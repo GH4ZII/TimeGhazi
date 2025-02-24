@@ -11,8 +11,8 @@ using TimeGhazi.Models;
 namespace TimeGhazi.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250224182522_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20250224201329_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

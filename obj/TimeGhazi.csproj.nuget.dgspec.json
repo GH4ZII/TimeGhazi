@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGripProject\\TimeGrip.Net\\TimeGhazi.csproj": {}
+    "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\TimeGhazi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGripProject\\TimeGrip.Net\\TimeGhazi.csproj": {
+    "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\TimeGhazi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGripProject\\TimeGrip.Net\\TimeGhazi.csproj",
+        "projectUniqueName": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\TimeGhazi.csproj",
         "projectName": "TimeGhazi",
-        "projectPath": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGripProject\\TimeGrip.Net\\TimeGhazi.csproj",
+        "projectPath": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\TimeGhazi.csproj",
         "packagesPath": "C:\\Users\\ghaaz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGripProject\\TimeGrip.Net\\obj\\",
+        "outputPath": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ghaaz\\AppData\\Roaming\\NuGet\\NuGet.Config",

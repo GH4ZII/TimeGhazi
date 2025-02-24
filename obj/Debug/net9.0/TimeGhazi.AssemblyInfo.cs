@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TimeGhazi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4276ad331059ecad2c2fc49b8f32331657cc4c12")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87df781e28151d5932c2a3c45d0ada33c30813e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("TimeGhazi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TimeGhazi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
