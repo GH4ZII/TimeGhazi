@@ -30,12 +30,14 @@ builder.Services.AddAuthorization();
 // **Konfigurer CORS (Cross-Origin Resource Sharing)**
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll",
+    options.AddPolicy("AllowSpecificOrigins",
         policy => policy
-            .AllowAnyOrigin()
-            .AllowAnyMethod() // Tillater alle HTTP-metoder (GET, POST, PUT, DELETE, etc.)
-            .AllowAnyHeader()); // Tillater alle HTTP-headere
+            .WithOrigins("http://localhost:8081", "https://timeghazi-chephuash3ekdyd6.westeurope-01.azurewebsites.net") // Legg til alle gyldige domener her
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials());
 });
+
 
 // **Legger til SignalR for sanntidskommunikasjon**
 builder.Services.AddSignalR();
@@ -73,7 +75,7 @@ builder.Services.AddRazorPages();
 var app = builder.Build();
 
 // **Aktiver CORS-policyen**
-app.UseCors("AllowAll");
+app.UseCors("AllowSpecificOrigins");
 
 // **Konfigurer midlertidig rørledning avhengig av miljø**
 if (app.Environment.IsDevelopment())
