@@ -1,0 +1,68 @@
+﻿/* 🔥 Fjern hvit strek under navbar og gi den en futuristisk stil */
+.navbar {
+    background-color: transparent !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    margin-bottom: 0 !important;
+    padding: 5px 0;
+}
+
+/* 🟣 Navbar-tekst og ikoner */
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #E0E0E0 !important; /* Lys grå tekst for god lesbarhet */
+    transition: color 0.3s ease-in-out;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* 🟣 Hover-effekt for navbar-lenker */
+.navbar .navbar-brand:hover,
+.navbar .nav-link:hover {
+    color: #B3A0FF !important; /* Lys lilla som passer inn i bakgrunnen */
+    text-shadow: 0px 0px 8px rgba(179, 160, 255, 0.7); /* Subtil neon-glød */
+}
+
+/* 🟣 Aktive lenker får en sterkere farge */
+.navbar .nav-link.active {
+    color: #FF00FF !important; /* Neon rosa for ekstra effekt */
+    font-weight: bold;
+}
+
+/* 📱 Stil for navbar-knapp på mobil */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+/* 🔹 Juster høyrejusterte nav-links */
+.navbar-nav.ms-auto .nav-link {
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* 🟣 Hover-effekt for høyrejusterte nav-links */
+.navbar-nav.ms-auto .nav-link:hover {
+    background: rgba(255, 0, 255, 0.2);
+    text-shadow: 0px 0px 8px rgba(255, 0, 255, 0.7);
+}
+
+/* 📌 Navbar logo styling */
+.navbar-logo {
+    height: 100px; /* Juster høyden om nødvendig */
+    width: auto;
+    display: block;
+    object-fit: contain; /* Sikrer at bildet ikke strekkes */
+}
+
+
+
+
+
+
+

@@ -22,7 +22,37 @@
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         <PrivateAssets>all</PrivateAssets>
       </PackageReference>
+      <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
       <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="publish\**" />
+      <Compile Remove="src\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="publish\**" />
+      <EmbeddedResource Remove="src\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="publish\**" />
+      <Content Remove="src\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="publish\**" />
+      <None Remove="src\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\TimeGhazi.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\TimeGhazi.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\TimeGhazi.staticwebassets.endpoints.json" />
     </ItemGroup>
 
 </Project>

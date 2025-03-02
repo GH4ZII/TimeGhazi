@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SMPfA1he8yUiyYMg2T5OazMZxXcAGoABSnKjx8TzmaA=",
+  "Hash": "Ym4HAflb1mZdjpJi77QMG4bnAPoGxwQMdkaD56eQREE=",
   "Source": "TimeGhazi",
   "BasePath": "_content/TimeGhazi",
   "Mode": "Default",
@@ -1382,6 +1382,27 @@
       "OriginalItemSpec": "C:\\Users\\ghaaz\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
+      "Identity": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\0wqok8ncf3-5kj02f6tpp.gz",
+      "SourceId": "TimeGhazi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\",
+      "BasePath": "_content/TimeGhazi",
+      "RelativePath": "images/user-286#[.{fingerprint=5kj02f6tpp}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\images\\user-286.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "39t7q3r0w1",
+      "Integrity": "14Xq7nq6ppkmxJuA6jOIEgA5Y6HTFqbPvTvIlisxLjU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\images\\user-286.svg"
+    },
+    {
       "Identity": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\0xc9idgv6f-0j3bgjxly4.gz",
       "SourceId": "TimeGhazi",
       "SourceType": "Discovered",
@@ -2327,6 +2348,27 @@
       "OriginalItemSpec": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
     },
     {
+      "Identity": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\dkmfql9g8x-ijbjojdz2i.gz",
+      "SourceId": "TimeGhazi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\",
+      "BasePath": "_content/TimeGhazi",
+      "RelativePath": "css/LoginPage#[.{fingerprint=ijbjojdz2i}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\LoginPage.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "l9z5cfqe5n",
+      "Integrity": "N3b45wwLBbrIEKZms4DyVbvWFxdymoiiEdewY1POeIc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\LoginPage.css"
+    },
+    {
       "Identity": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\dpe2c8k3sd-1hgn2l4wjj.gz",
       "SourceId": "TimeGhazi",
       "SourceType": "Discovered",
@@ -2642,12 +2684,12 @@
       "OriginalItemSpec": "C:\\Users\\ghaaz\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\ilklb2bpql-b9sayid5wm.gz",
+      "Identity": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\ilklb2bpql-v2s0ojm4dg.gz",
       "SourceId": "TimeGhazi",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\",
       "BasePath": "_content/TimeGhazi",
-      "RelativePath": "css/site#[.{fingerprint=b9sayid5wm}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=v2s0ojm4dg}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -2656,8 +2698,8 @@
       "RelatedAsset": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "0suozzrugb",
-      "Integrity": "0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=",
+      "Fingerprint": "js3jxr6hvb",
+      "Integrity": "DbkdKI9s/nfwmyFIIoMw+q/FLpa0wlduX/DcWj+eps0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\site.css"
@@ -3123,6 +3165,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ghaaz\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Identity": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\0wqok8ncf3-5kj02f6tpp.br",
+      "SourceId": "TimeGhazi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\",
+      "BasePath": "_content/TimeGhazi",
+      "RelativePath": "images/user-286#[.{fingerprint=5kj02f6tpp}]?.svg.br",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\images\\user-286.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "br",
+      "Fingerprint": "1fo46ves3f",
+      "Integrity": "ndbXSJpT080KkiFvn8bLsHSge/PEyZN7XhCYh9DV2mM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\images\\user-286.svg"
     },
     {
       "Identity": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\0xc9idgv6f-0j3bgjxly4.br",
@@ -4070,6 +4133,27 @@
       "OriginalItemSpec": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
     },
     {
+      "Identity": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\dkmfql9g8x-ijbjojdz2i.br",
+      "SourceId": "TimeGhazi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\",
+      "BasePath": "_content/TimeGhazi",
+      "RelativePath": "css/LoginPage#[.{fingerprint=ijbjojdz2i}]?.css.br",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\LoginPage.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "br",
+      "Fingerprint": "w2e2iqeg8k",
+      "Integrity": "OHLtkOpub6StI1gcWD7nX3ef+txj2gIeLLQKLe7HAUQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\LoginPage.css"
+    },
+    {
       "Identity": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\dpe2c8k3sd-1hgn2l4wjj.br",
       "SourceId": "TimeGhazi",
       "SourceType": "Discovered",
@@ -4385,12 +4469,12 @@
       "OriginalItemSpec": "C:\\Users\\ghaaz\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\ilklb2bpql-b9sayid5wm.br",
+      "Identity": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\ilklb2bpql-v2s0ojm4dg.br",
       "SourceId": "TimeGhazi",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\",
       "BasePath": "_content/TimeGhazi",
-      "RelativePath": "css/site#[.{fingerprint=b9sayid5wm}]?.css.br",
+      "RelativePath": "css/site#[.{fingerprint=v2s0ojm4dg}]?.css.br",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -4399,8 +4483,8 @@
       "RelatedAsset": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "br",
-      "Fingerprint": "fvsz3d33yr",
-      "Integrity": "FVzJe6Q2UlG8wiE0wKPzsNcJ5m9zWTbKIN9rO8SkzT8=",
+      "Fingerprint": "e9vdc78dy0",
+      "Integrity": "gqer4MSeLkwobCdjkh4c05yqlAHAgZ+9S5fnu8vlMz4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\site.css"
@@ -6737,6 +6821,27 @@
       "OriginalItemSpec": "wwwroot\\css\\CreateShift.css"
     },
     {
+      "Identity": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\LoginPage.css",
+      "SourceId": "TimeGhazi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\",
+      "BasePath": "_content/TimeGhazi",
+      "RelativePath": "css/LoginPage#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ijbjojdz2i",
+      "Integrity": "LpXfHQJrhWh6I4wlOTPmlA0Qz/MJ8HJhI0I54Yb8ar8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\LoginPage.css"
+    },
+    {
       "Identity": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\site.css",
       "SourceId": "TimeGhazi",
       "SourceType": "Discovered",
@@ -6751,8 +6856,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b9sayid5wm",
-      "Integrity": "j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=",
+      "Fingerprint": "v2s0ojm4dg",
+      "Integrity": "JzKjs4atN/hJUslThR/Lc7nVMAAEZJ171eiR2ZNgiVM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -6777,6 +6882,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\images\\minLogo.png",
+      "SourceId": "TimeGhazi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\",
+      "BasePath": "_content/TimeGhazi",
+      "RelativePath": "images/minLogo#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ertgm1mef5",
+      "Integrity": "qlQAaqYt4HU7V4FV7eCxScALSdxck71eDdEljAUHvpo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\minLogo.png"
+    },
+    {
+      "Identity": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\images\\user-286.svg",
+      "SourceId": "TimeGhazi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\",
+      "BasePath": "_content/TimeGhazi",
+      "RelativePath": "images/user-286#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5kj02f6tpp",
+      "Integrity": "BeH3G+4V2YtWIO3y8NjfgIAI8oJ1CLCiFISwHT+Jpi4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\user-286.svg"
     },
     {
       "Identity": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\js\\site.js",
@@ -8086,7 +8233,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Feb 2025 17:00:05 GMT"
+          "Value": "Tue, 25 Feb 2025 15:36:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8149,7 +8296,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Feb 2025 17:00:05 GMT"
+          "Value": "Tue, 25 Feb 2025 15:36:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8210,7 +8357,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Feb 2025 17:00:05 GMT"
+          "Value": "Tue, 25 Feb 2025 15:36:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8255,7 +8402,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Feb 2025 17:00:05 GMT"
+          "Value": "Tue, 25 Feb 2025 15:36:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8308,7 +8455,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Feb 2025 17:00:05 GMT"
+          "Value": "Tue, 25 Feb 2025 15:36:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8363,7 +8510,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Feb 2025 17:00:05 GMT"
+          "Value": "Tue, 25 Feb 2025 15:36:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8418,7 +8565,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Feb 2025 17:00:05 GMT"
+          "Value": "Tue, 25 Feb 2025 15:36:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8471,7 +8618,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Feb 2025 17:00:05 GMT"
+          "Value": "Tue, 25 Feb 2025 15:36:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8508,7 +8655,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Feb 2025 17:00:05 GMT"
+          "Value": "Tue, 25 Feb 2025 15:36:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8553,7 +8700,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Feb 2025 17:00:05 GMT"
+          "Value": "Tue, 25 Feb 2025 15:36:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8576,13 +8723,13 @@
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\ilklb2bpql-b9sayid5wm.gz",
+      "Route": "css/LoginPage.css",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\dkmfql9g8x-ijbjojdz2i.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003134796238"
+          "Quality": "0.000668449198"
         }
       ],
       "ResponseHeaders": [
@@ -8592,15 +8739,252 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "1495"
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"N3b45wwLBbrIEKZms4DyVbvWFxdymoiiEdewY1POeIc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 18:41:13 GMT"
+          "Value": "Tue, 25 Feb 2025 23:22:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"LpXfHQJrhWh6I4wlOTPmlA0Qz/MJ8HJhI0I54Yb8ar8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LpXfHQJrhWh6I4wlOTPmlA0Qz/MJ8HJhI0I54Yb8ar8="
+        }
+      ]
+    },
+    {
+      "Route": "css/LoginPage.css",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\dkmfql9g8x-ijbjojdz2i.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.000789889415"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1265"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OHLtkOpub6StI1gcWD7nX3ef+txj2gIeLLQKLe7HAUQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 23:22:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"LpXfHQJrhWh6I4wlOTPmlA0Qz/MJ8HJhI0I54Yb8ar8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LpXfHQJrhWh6I4wlOTPmlA0Qz/MJ8HJhI0I54Yb8ar8="
+        }
+      ]
+    },
+    {
+      "Route": "css/LoginPage.css",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\LoginPage.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4448"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LpXfHQJrhWh6I4wlOTPmlA0Qz/MJ8HJhI0I54Yb8ar8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 23:22:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LpXfHQJrhWh6I4wlOTPmlA0Qz/MJ8HJhI0I54Yb8ar8="
+        }
+      ]
+    },
+    {
+      "Route": "css/LoginPage.css.br",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\dkmfql9g8x-ijbjojdz2i.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1265"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OHLtkOpub6StI1gcWD7nX3ef+txj2gIeLLQKLe7HAUQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 23:22:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OHLtkOpub6StI1gcWD7nX3ef+txj2gIeLLQKLe7HAUQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/LoginPage.css.gz",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\dkmfql9g8x-ijbjojdz2i.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1495"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N3b45wwLBbrIEKZms4DyVbvWFxdymoiiEdewY1POeIc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 23:22:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-N3b45wwLBbrIEKZms4DyVbvWFxdymoiiEdewY1POeIc="
+        }
+      ]
+    },
+    {
+      "Route": "css/LoginPage.ijbjojdz2i.css",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\dkmfql9g8x-ijbjojdz2i.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000668449198"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1495"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N3b45wwLBbrIEKZms4DyVbvWFxdymoiiEdewY1POeIc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 23:22:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8620,32 +9004,32 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"LpXfHQJrhWh6I4wlOTPmlA0Qz/MJ8HJhI0I54Yb8ar8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "ijbjojdz2i"
         },
         {
           "Name": "label",
-          "Value": "css/site.css"
+          "Value": "css/LoginPage.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-LpXfHQJrhWh6I4wlOTPmlA0Qz/MJ8HJhI0I54Yb8ar8="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\ilklb2bpql-b9sayid5wm.br",
+      "Route": "css/LoginPage.ijbjojdz2i.css",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\dkmfql9g8x-ijbjojdz2i.br",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "br",
-          "Quality": "0.004310344828"
+          "Quality": "0.000789889415"
         }
       ],
       "ResponseHeaders": [
@@ -8655,15 +9039,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "1265"
         },
         {
           "Name": "ETag",
-          "Value": "\"FVzJe6Q2UlG8wiE0wKPzsNcJ5m9zWTbKIN9rO8SkzT8=\""
+          "Value": "\"OHLtkOpub6StI1gcWD7nX3ef+txj2gIeLLQKLe7HAUQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 18:41:13 GMT"
+          "Value": "Tue, 25 Feb 2025 23:22:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8683,26 +9067,287 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"LpXfHQJrhWh6I4wlOTPmlA0Qz/MJ8HJhI0I54Yb8ar8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "ijbjojdz2i"
         },
         {
           "Name": "label",
-          "Value": "css/site.css"
+          "Value": "css/LoginPage.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-LpXfHQJrhWh6I4wlOTPmlA0Qz/MJ8HJhI0I54Yb8ar8="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css",
+      "Route": "css/LoginPage.ijbjojdz2i.css",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\LoginPage.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4448"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LpXfHQJrhWh6I4wlOTPmlA0Qz/MJ8HJhI0I54Yb8ar8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 23:22:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ijbjojdz2i"
+        },
+        {
+          "Name": "label",
+          "Value": "css/LoginPage.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LpXfHQJrhWh6I4wlOTPmlA0Qz/MJ8HJhI0I54Yb8ar8="
+        }
+      ]
+    },
+    {
+      "Route": "css/LoginPage.ijbjojdz2i.css.br",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\dkmfql9g8x-ijbjojdz2i.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1265"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OHLtkOpub6StI1gcWD7nX3ef+txj2gIeLLQKLe7HAUQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 23:22:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ijbjojdz2i"
+        },
+        {
+          "Name": "label",
+          "Value": "css/LoginPage.css.br"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OHLtkOpub6StI1gcWD7nX3ef+txj2gIeLLQKLe7HAUQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/LoginPage.ijbjojdz2i.css.gz",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\dkmfql9g8x-ijbjojdz2i.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1495"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N3b45wwLBbrIEKZms4DyVbvWFxdymoiiEdewY1POeIc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 23:22:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ijbjojdz2i"
+        },
+        {
+          "Name": "label",
+          "Value": "css/LoginPage.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-N3b45wwLBbrIEKZms4DyVbvWFxdymoiiEdewY1POeIc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\ilklb2bpql-v2s0ojm4dg.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001267427123"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "788"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DbkdKI9s/nfwmyFIIoMw+q/FLpa0wlduX/DcWj+eps0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 22:56:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"JzKjs4atN/hJUslThR/Lc7nVMAAEZJ171eiR2ZNgiVM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JzKjs4atN/hJUslThR/Lc7nVMAAEZJ171eiR2ZNgiVM="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\ilklb2bpql-v2s0ojm4dg.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.001506024096"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "663"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gqer4MSeLkwobCdjkh4c05yqlAHAgZ+9S5fnu8vlMz4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 22:56:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"JzKjs4atN/hJUslThR/Lc7nVMAAEZJ171eiR2ZNgiVM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JzKjs4atN/hJUslThR/Lc7nVMAAEZJ171eiR2ZNgiVM="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
       "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -8712,7 +9357,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "1782"
         },
         {
           "Name": "Content-Type",
@@ -8720,11 +9365,264 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"JzKjs4atN/hJUslThR/Lc7nVMAAEZJ171eiR2ZNgiVM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 18:41:13 GMT"
+          "Value": "Tue, 25 Feb 2025 22:56:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JzKjs4atN/hJUslThR/Lc7nVMAAEZJ171eiR2ZNgiVM="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.br",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\ilklb2bpql-v2s0ojm4dg.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "663"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gqer4MSeLkwobCdjkh4c05yqlAHAgZ+9S5fnu8vlMz4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 22:56:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gqer4MSeLkwobCdjkh4c05yqlAHAgZ+9S5fnu8vlMz4="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\ilklb2bpql-v2s0ojm4dg.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "788"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DbkdKI9s/nfwmyFIIoMw+q/FLpa0wlduX/DcWj+eps0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 22:56:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DbkdKI9s/nfwmyFIIoMw+q/FLpa0wlduX/DcWj+eps0="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.v2s0ojm4dg.css",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\ilklb2bpql-v2s0ojm4dg.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001267427123"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "788"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DbkdKI9s/nfwmyFIIoMw+q/FLpa0wlduX/DcWj+eps0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 22:56:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"JzKjs4atN/hJUslThR/Lc7nVMAAEZJ171eiR2ZNgiVM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v2s0ojm4dg"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JzKjs4atN/hJUslThR/Lc7nVMAAEZJ171eiR2ZNgiVM="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.v2s0ojm4dg.css",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\ilklb2bpql-v2s0ojm4dg.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.001506024096"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "663"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gqer4MSeLkwobCdjkh4c05yqlAHAgZ+9S5fnu8vlMz4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 22:56:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"JzKjs4atN/hJUslThR/Lc7nVMAAEZJ171eiR2ZNgiVM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v2s0ojm4dg"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JzKjs4atN/hJUslThR/Lc7nVMAAEZJ171eiR2ZNgiVM="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.v2s0ojm4dg.css",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1782"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JzKjs4atN/hJUslThR/Lc7nVMAAEZJ171eiR2ZNgiVM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 22:56:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8734,7 +9632,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "v2s0ojm4dg"
         },
         {
           "Name": "label",
@@ -8742,13 +9640,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-JzKjs4atN/hJUslThR/Lc7nVMAAEZJ171eiR2ZNgiVM="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css.br",
-      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\ilklb2bpql-b9sayid5wm.br",
+      "Route": "css/site.v2s0ojm4dg.css.br",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\ilklb2bpql-v2s0ojm4dg.br",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8757,7 +9655,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "663"
         },
         {
           "Name": "Content-Type",
@@ -8765,11 +9663,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FVzJe6Q2UlG8wiE0wKPzsNcJ5m9zWTbKIN9rO8SkzT8=\""
+          "Value": "\"gqer4MSeLkwobCdjkh4c05yqlAHAgZ+9S5fnu8vlMz4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 18:41:13 GMT"
+          "Value": "Tue, 25 Feb 2025 22:56:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8787,7 +9685,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "v2s0ojm4dg"
         },
         {
           "Name": "label",
@@ -8795,13 +9693,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-FVzJe6Q2UlG8wiE0wKPzsNcJ5m9zWTbKIN9rO8SkzT8="
+          "Value": "sha256-gqer4MSeLkwobCdjkh4c05yqlAHAgZ+9S5fnu8vlMz4="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css.gz",
-      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\ilklb2bpql-b9sayid5wm.gz",
+      "Route": "css/site.v2s0ojm4dg.css.gz",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\ilklb2bpql-v2s0ojm4dg.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8810,7 +9708,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "788"
         },
         {
           "Name": "Content-Type",
@@ -8818,11 +9716,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"DbkdKI9s/nfwmyFIIoMw+q/FLpa0wlduX/DcWj+eps0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 18:41:13 GMT"
+          "Value": "Tue, 25 Feb 2025 22:56:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8840,7 +9738,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "v2s0ojm4dg"
         },
         {
           "Name": "label",
@@ -8848,244 +9746,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\ilklb2bpql-b9sayid5wm.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.003134796238"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "318"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 18:41:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\ilklb2bpql-b9sayid5wm.br",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "br",
-          "Quality": "0.004310344828"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "231"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"FVzJe6Q2UlG8wiE0wKPzsNcJ5m9zWTbKIN9rO8SkzT8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 18:41:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "br"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "667"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 18:41:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.br",
-      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\ilklb2bpql-b9sayid5wm.br",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "231"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"FVzJe6Q2UlG8wiE0wKPzsNcJ5m9zWTbKIN9rO8SkzT8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 18:41:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "br"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-FVzJe6Q2UlG8wiE0wKPzsNcJ5m9zWTbKIN9rO8SkzT8="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\ilklb2bpql-b9sayid5wm.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "318"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 18:41:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y="
+          "Value": "sha256-DbkdKI9s/nfwmyFIIoMw+q/FLpa0wlduX/DcWj+eps0="
         }
       ]
     },
@@ -24331,6 +24992,602 @@
         {
           "Name": "integrity",
           "Value": "sha256-JKWeHUaANNuffeRatdc54UCb84RoxjEw/nTq8Mops8Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/minLogo.ertgm1mef5.png",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\images\\minLogo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1017032"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qlQAaqYt4HU7V4FV7eCxScALSdxck71eDdEljAUHvpo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 20:34:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ertgm1mef5"
+        },
+        {
+          "Name": "label",
+          "Value": "images/minLogo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qlQAaqYt4HU7V4FV7eCxScALSdxck71eDdEljAUHvpo="
+        }
+      ]
+    },
+    {
+      "Route": "images/minLogo.png",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\images\\minLogo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1017032"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qlQAaqYt4HU7V4FV7eCxScALSdxck71eDdEljAUHvpo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 20:34:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qlQAaqYt4HU7V4FV7eCxScALSdxck71eDdEljAUHvpo="
+        }
+      ]
+    },
+    {
+      "Route": "images/user-286.5kj02f6tpp.svg",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\0wqok8ncf3-5kj02f6tpp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001418439716"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "704"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"14Xq7nq6ppkmxJuA6jOIEgA5Y6HTFqbPvTvIlisxLjU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"BeH3G+4V2YtWIO3y8NjfgIAI8oJ1CLCiFISwHT+Jpi4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5kj02f6tpp"
+        },
+        {
+          "Name": "label",
+          "Value": "images/user-286.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BeH3G+4V2YtWIO3y8NjfgIAI8oJ1CLCiFISwHT+Jpi4="
+        }
+      ]
+    },
+    {
+      "Route": "images/user-286.5kj02f6tpp.svg",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\0wqok8ncf3-5kj02f6tpp.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.001605136437"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "622"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ndbXSJpT080KkiFvn8bLsHSge/PEyZN7XhCYh9DV2mM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"BeH3G+4V2YtWIO3y8NjfgIAI8oJ1CLCiFISwHT+Jpi4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5kj02f6tpp"
+        },
+        {
+          "Name": "label",
+          "Value": "images/user-286.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BeH3G+4V2YtWIO3y8NjfgIAI8oJ1CLCiFISwHT+Jpi4="
+        }
+      ]
+    },
+    {
+      "Route": "images/user-286.5kj02f6tpp.svg",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\images\\user-286.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1575"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BeH3G+4V2YtWIO3y8NjfgIAI8oJ1CLCiFISwHT+Jpi4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5kj02f6tpp"
+        },
+        {
+          "Name": "label",
+          "Value": "images/user-286.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BeH3G+4V2YtWIO3y8NjfgIAI8oJ1CLCiFISwHT+Jpi4="
+        }
+      ]
+    },
+    {
+      "Route": "images/user-286.5kj02f6tpp.svg.br",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\0wqok8ncf3-5kj02f6tpp.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "622"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ndbXSJpT080KkiFvn8bLsHSge/PEyZN7XhCYh9DV2mM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5kj02f6tpp"
+        },
+        {
+          "Name": "label",
+          "Value": "images/user-286.svg.br"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ndbXSJpT080KkiFvn8bLsHSge/PEyZN7XhCYh9DV2mM="
+        }
+      ]
+    },
+    {
+      "Route": "images/user-286.5kj02f6tpp.svg.gz",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\0wqok8ncf3-5kj02f6tpp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "704"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"14Xq7nq6ppkmxJuA6jOIEgA5Y6HTFqbPvTvIlisxLjU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5kj02f6tpp"
+        },
+        {
+          "Name": "label",
+          "Value": "images/user-286.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-14Xq7nq6ppkmxJuA6jOIEgA5Y6HTFqbPvTvIlisxLjU="
+        }
+      ]
+    },
+    {
+      "Route": "images/user-286.svg",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\0wqok8ncf3-5kj02f6tpp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001418439716"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "704"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"14Xq7nq6ppkmxJuA6jOIEgA5Y6HTFqbPvTvIlisxLjU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"BeH3G+4V2YtWIO3y8NjfgIAI8oJ1CLCiFISwHT+Jpi4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BeH3G+4V2YtWIO3y8NjfgIAI8oJ1CLCiFISwHT+Jpi4="
+        }
+      ]
+    },
+    {
+      "Route": "images/user-286.svg",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\0wqok8ncf3-5kj02f6tpp.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.001605136437"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "622"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ndbXSJpT080KkiFvn8bLsHSge/PEyZN7XhCYh9DV2mM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"BeH3G+4V2YtWIO3y8NjfgIAI8oJ1CLCiFISwHT+Jpi4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BeH3G+4V2YtWIO3y8NjfgIAI8oJ1CLCiFISwHT+Jpi4="
+        }
+      ]
+    },
+    {
+      "Route": "images/user-286.svg",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\images\\user-286.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1575"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BeH3G+4V2YtWIO3y8NjfgIAI8oJ1CLCiFISwHT+Jpi4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BeH3G+4V2YtWIO3y8NjfgIAI8oJ1CLCiFISwHT+Jpi4="
+        }
+      ]
+    },
+    {
+      "Route": "images/user-286.svg.br",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\publish\\0wqok8ncf3-5kj02f6tpp.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "622"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ndbXSJpT080KkiFvn8bLsHSge/PEyZN7XhCYh9DV2mM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ndbXSJpT080KkiFvn8bLsHSge/PEyZN7XhCYh9DV2mM="
+        }
+      ]
+    },
+    {
+      "Route": "images/user-286.svg.gz",
+      "AssetFile": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\obj\\Release\\net9.0\\compressed\\0wqok8ncf3-5kj02f6tpp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "704"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"14Xq7nq6ppkmxJuA6jOIEgA5Y6HTFqbPvTvIlisxLjU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 21:05:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-14Xq7nq6ppkmxJuA6jOIEgA5Y6HTFqbPvTvIlisxLjU="
         }
       ]
     },

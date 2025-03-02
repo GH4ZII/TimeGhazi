@@ -29,12 +29,12 @@ namespace TimeGhazi.Controllers
                 .Include(s => s.Employee) // 🔥 Henter ansatt-informasjonen
                 .ToListAsync();
 
-            return View(shifts); // Sender skift-listen til visningen
+            return View("~/Views/Admin/AdminDashboard.cshtml", shifts);
         }
 
         // **GET: Viser skjema for å legge til nytt skift**
         [Authorize(Roles = "Admin")] // Kun admin kan se skjemaet
-        public IActionResult Create()
+        public IActionResult CreateShift()
         {
             
             var employees = _context.Employees.ToList();
@@ -47,14 +47,14 @@ namespace TimeGhazi.Controllers
             {
                 ViewBag.Employees = employees;
             }
-            return View(); // Viser skjema for å opprette skift
+            return View("~/Views/Admin/CreateShift.cshtml"); // Viser skjema for å opprette skift
         }
 
         // **POST: Legger til et nytt skift**
         [HttpPost]
         [Authorize(Roles = "Admin")] // Kun admin kan legge til skift
         [ValidateAntiForgeryToken] // Beskytter mot CSRF-angrep
-public async Task<IActionResult> Create([Bind("EmployeeId,StartTime,EndTime")] Shift shift)
+public async Task<IActionResult> CreateShift([Bind("EmployeeId,StartTime,EndTime")] Shift shift)
 {
     var employees = _context.Employees.ToList();
     ViewBag.Employees = employees; // Sikrer at dropdown for ansatte fungerer
@@ -74,7 +74,7 @@ public async Task<IActionResult> Create([Bind("EmployeeId,StartTime,EndTime")] S
                 Console.WriteLine($"  - {error.Key}: {err.ErrorMessage}");
             }
         }
-        return View(shift);
+        return View("~/Views/Admin/CreateShift.cshtml", shift);
     }
 
     try
@@ -85,7 +85,7 @@ public async Task<IActionResult> Create([Bind("EmployeeId,StartTime,EndTime")] S
         {
             Console.WriteLine("❌ Feil: Fant ikke en ansatt med ID " + shift.EmployeeId);
             ModelState.AddModelError("EmployeeId", "Den valgte ansatte finnes ikke.");
-            return View(shift);
+            return View("~/Views/Admin/CreateShift.cshtml", shift);
         }
 
         shift.Employee = employee; // 🔥 Viktig! Setter Employee-objektet
@@ -104,7 +104,7 @@ public async Task<IActionResult> Create([Bind("EmployeeId,StartTime,EndTime")] S
     catch (Exception ex)
     {
         Console.WriteLine($"❌ Feil ved lagring i databasen: {ex.Message}");
-        return View(shift);
+                return View("~/Views/Admin/CreateShift.cshtml", shift);
             }
         }
     }

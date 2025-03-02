@@ -5,8 +5,24 @@
       "PackagePath": "staticwebassets\\TimeGhazi.xt07ojdcnd.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\CreateEmployee.css",
+      "PackagePath": "staticwebassets\\css\\CreateEmployee.css"
+    },
+    {
       "Id": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\CreateShift.css",
       "PackagePath": "staticwebassets\\css\\CreateShift.css"
+    },
+    {
+      "Id": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\LoginPage.css",
+      "PackagePath": "staticwebassets\\css\\LoginPage.css"
+    },
+    {
+      "Id": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\adminDashboard.css",
+      "PackagePath": "staticwebassets\\css\\adminDashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\navBar.css",
+      "PackagePath": "staticwebassets\\css\\navBar.css"
     },
     {
       "Id": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\site.css",
@@ -15,6 +31,14 @@
     {
       "Id": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\images\\minLogo.png",
+      "PackagePath": "staticwebassets\\images\\minLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\images\\user-286.svg",
+      "PackagePath": "staticwebassets\\images\\user-286.svg"
     },
     {
       "Id": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\js\\site.js",

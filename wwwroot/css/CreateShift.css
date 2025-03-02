@@ -1,9 +1,73 @@
-﻿/* Egendefinert stil for ringene */
+﻿/* 🌙 Mørk bakgrunn og moderne design */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 🎯 Container for skiftoppretting */
+.shift-container {
+    max-width: 450px;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 255, 0.3);
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* 🏷️ Skjemaelementer */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* 🖤 Mørk input-felt */
+.form-control {
+    background-color: #222;
+    border: 1px solid #555;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-control:focus {
+    background-color: #333;
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* 🎨 Knappestil */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* 🌀 Ring-design for et high-tech preg */
 .circle-container {
-    position: relative; /* Holder ringene på riktig sted */
+    position: relative;
     width: 300px;
-    height: 200px; /* Justerer høyden for oval effekt */
-    margin: 50px auto; /* Sentrerer ringene */
+    height: 200px;
+    margin: 30px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,21 +77,33 @@
     position: absolute;
     border-radius: 50%;
     background-color: transparent;
-    border: 10px solid transparent; /* Gjør det til en ring */
+    border: 10px solid transparent;
 }
 
 .circle.blue {
     width: 170px;
     height: 170px;
-    border-color: rgba(0, 0, 255, 0.7); /* Blå ring */
-    box-shadow: 0 0 20px rgba(0, 0, 255, 0.5); /* Sterkere blå skygge */
-    transform: translateX(-460px); /* Skyver ringen litt til venstre */
+    border-color: rgba(0, 0, 255, 0.7);
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+    transform: translateX(-460px);
 }
 
 .circle.gray {
     width: 190px;
     height: 190px;
-    border-color: rgba(0, 0, 0, 0.5); /* Grå ring */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sterkere grå skygge */
-    transform: translateX(-350px); /* Skyver ringen litt til høyre */
+    border-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transform: translateX(-350px);
+}
+
+/* 📱 Responsivt design */
+@media (max-width: 600px) {
+    .shift-container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+    }
 }

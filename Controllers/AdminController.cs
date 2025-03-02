@@ -23,6 +23,11 @@ namespace TimeGhazi.Controllers
             _roleManager = roleManager;
             _context = context;
         }
+        
+        public IActionResult AdminDashboard()
+        {
+            return View();
+        }
 
         // GET: Viser skjemaet for å opprette en ny ansatt
         public IActionResult CreateEmployee()

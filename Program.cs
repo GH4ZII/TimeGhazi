@@ -56,6 +56,7 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+
 // **Konfigurer ASP.NET Identity for autentisering og brukerhåndtering**
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
     {
@@ -85,7 +86,6 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "TimeGhazi API v1");
-        c.RoutePrefix = string.Empty;
     });
 }
 else
@@ -111,7 +111,7 @@ app.MapHub<ShiftHub>("/shiftHub"); // **Definerer SignalR-endepunkt for skiftopp
 // **Konfigurer standardruting for web-applikasjonen**
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Shift}/{action=Index}/{id?}");
+    pattern: "{controller=Admin}/{action=AdminDashboard}/{id?}");
 
 // **Kjør DataSeeder for å opprette standard admin-bruker og roller**
 using (var scope = app.Services.CreateScope())

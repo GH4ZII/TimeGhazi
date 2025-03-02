@@ -1,0 +1,89 @@
+﻿/* CreateEmployee.css */
+
+/* Generelle stilinnstillinger */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2d333a;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Tittelstil */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Meldingsboks for suksess */
+.alert-success {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Skjema */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form-grupper */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Etiketter */
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inndatabokser */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Valideringsfeil */
+.text-danger {
+    font-size: 14px;
+}
+
+/* Opprett-knapp */
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+/* Responsiv design */
+@media (max-width: 600px) {
+    form {
+        max-width: 90%;
+    }
+}

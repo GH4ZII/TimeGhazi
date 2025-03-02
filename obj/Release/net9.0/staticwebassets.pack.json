@@ -9,12 +9,24 @@
       "PackagePath": "staticwebassets\\css\\CreateShift.css"
     },
     {
+      "Id": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\LoginPage.css",
+      "PackagePath": "staticwebassets\\css\\LoginPage.css"
+    },
+    {
       "Id": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\images\\minLogo.png",
+      "PackagePath": "staticwebassets\\images\\minLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\images\\user-286.svg",
+      "PackagePath": "staticwebassets\\images\\user-286.svg"
     },
     {
       "Id": "C:\\Users\\ghaaz\\OneDrive\\Documents\\TimeGrip.Net\\wwwroot\\js\\site.js",

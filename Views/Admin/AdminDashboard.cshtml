@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<link rel="stylesheet" href="~/css/adminDashboard.css" asp-append-version="true"/>
+
+<h2>Admin Dashboard</h2>
+
+<p>Velkommen til adminpanelet, @User.Identity.Name!</p>
+
+<div class="list-group">
+    <a asp-controller="Admin" asp-action="CreateEmployee" class="list-group-item list-group-item-action">
+        ➕ Opprett ny ansatt
+    </a>
+    <a asp-controller="Admin" asp-action="ManageEmployees" class="list-group-item list-group-item-action">
+        👥 Administrer ansatte
+    </a>
+    <a asp-controller="Admin" asp-action="ViewRequests" class="list-group-item list-group-item-action">
+        📩 Se kundeforespørsler
+    </a>
+    <a asp-controller="Admin" asp-action="Reports" class="list-group-item list-group-item-action">
+        📊 Se rapporter
+    </a>
+</div>
+
+<div class="mt-3">
+    <a asp-controller="Account" asp-action="Logout" class="btn btn-danger">🚪 Logg ut</a>
+</div>

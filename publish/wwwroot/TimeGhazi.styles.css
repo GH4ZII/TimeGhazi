@@ -2,6 +2,18 @@
 /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+:root[b-fg085g43z2] {
+    --primary: #3b82f6;
+    --primary-dark: #1d4ed8;
+    --secondary: #64748b;
+    --surface: #ffffff;
+    --surface-alt: #f1f5f9;
+    --text: #1e293b;
+    --text-light: #64748b;
+    --success: #10b981;
+    --error: #ef4444;
+}
+
 a.navbar-brand[b-fg085g43z2] {
   white-space: normal;
   text-align: center;
@@ -13,15 +25,23 @@ a[b-fg085g43z2] {
 }
 
 .btn-primary[b-fg085g43z2] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: var(--surface);
+    background-color: var(--primary);
+    border-color: var(--primary);
+    transition: all 0.2s ease;
 }
 
-.nav-pills .nav-link.active[b-fg085g43z2], .nav-pills .show > .nav-link[b-fg085g43z2] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.btn-primary[b-fg085g43z2]:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+.nav-pills .nav-link.active[b-fg085g43z2], 
+.nav-pills .show > .nav-link[b-fg085g43z2] {
+    color: var(--surface);
+    background-color: var(--primary);
+    border-color: var(--primary);
 }
 
 .border-top[b-fg085g43z2] {
@@ -32,7 +52,7 @@ a[b-fg085g43z2] {
 }
 
 .box-shadow[b-fg085g43z2] {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 button.accept-policy[b-fg085g43z2] {
@@ -41,9 +61,43 @@ button.accept-policy[b-fg085g43z2] {
 }
 
 .footer[b-fg085g43z2] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+    background-color: var(--surface-alt);
+    border-top: 1px solid rgba(0,0,0,0.05);
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+
+/* Add new utility classes */
+.card[b-fg085g43z2] {
+    background: var(--surface);
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+    padding: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.card[b-fg085g43z2]:hover {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.table[b-fg085g43z2] {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.table th[b-fg085g43z2] {
+    background-color: var(--surface-alt);
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+}
+
+.table td[b-fg085g43z2] {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--surface-alt);
 }
